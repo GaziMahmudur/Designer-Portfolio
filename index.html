@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Creative Designer & Visual Thinker — Portfolio showcasing elegant, intentional design work." />
+  <title>Studio Elara — Designer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ─── STICKY NAV ─── -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">Elara<span>.</span></div>
+    <ul class="nav__links">
+      <li><a href="#intro" class="nav__link">Home</a></li>
+      <li><a href="#projects" class="nav__link">Work</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+      <li><a href="#cv" class="nav__link">CV</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#intro" class="mobile-link">Home</a></li>
+      <li><a href="#projects" class="mobile-link">Work</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+      <li><a href="#cv" class="mobile-link">CV</a></li>
+    </ul>
+  </div>
+
+  <!-- ─── SECTION 1: ANIMATED INTRO ─── -->
+  <section class="intro" id="intro">
+    <!-- Floating blobs -->
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+
+    <div class="intro__inner">
+      <!-- Left: Animated Text -->
+      <div class="intro__left">
+        <div class="intro__eyebrow" id="eyebrow">Portfolio — 2025</div>
+        <h1 class="intro__headline">
+          <span class="intro__line" id="line1">Creative</span>
+          <span class="intro__line" id="line2">Designer.</span>
+          <span class="intro__line intro__line--italic" id="line3">Visual Thinker.</span>
+        </h1>
+        <p class="intro__sub" id="introSub">
+          Crafting experiences that resonate — through considered type, colour, and space.
+        </p>
+        <a href="#projects" class="intro__cta" id="introCta">View My Work ↓</a>
+      </div>
+
+      <!-- Right: CSS Abstract Shape -->
+      <div class="intro__right" id="introRight">
+        <div class="shape-container">
+          <div class="shape shape--ring"></div>
+          <div class="shape shape--fill"></div>
+          <div class="shape shape--arc"></div>
+          <div class="shape shape--dot"></div>
+          <div class="shape shape--dot2"></div>
+          <div class="shape shape--line"></div>
+          <div class="shape shape--square"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-hint__line"></div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 2: PROJECT SHOWCASE ─── -->
+  <section class="projects" id="projects">
+    <div class="projects__header">
+      <p class="projects__label">Selected Work</p>
+      <h2 class="projects__title">Things I've<br/><em>made with care</em></h2>
+    </div>
+
+    <div class="masonry" id="masonry">
+
+      <div class="tile tile--tall" style="--tile-color: #e8c4b8;">
+        <div class="tile__content">
+          <span class="tile__tag">Brand Identity</span>
+          <h3 class="tile__title">Maison Fleur</h3>
+        </div>
+        <div class="tile__overlay">
+          <p class="tile__desc">A full visual identity for a Parisian florist — wordmark, packaging, and brand guidelines.</p>
+          <a href="#" class="tile__link">View Project →</a>
+        </div>
+      </div>
+
+      <div class="tile tile--short" style="--tile-color: #c8d8c8;">
+        <div class="tile__content">
+          <span class="tile__tag">Editorial</span>
+          <h3 class="tile__title">Grain Magazine</h3>
+        </div>
+        <div class="tile__overlay">
+          <p class="tile__desc">Layout design for an independent print magazine exploring slow living and craft.</p>
+          <a href="#" class="tile__link">View Project →</a>
+        </div>
+      </div>
+
+      <div class="tile tile--short" style="--tile-color: #c8c0d8;">
+        <div class="tile__content">
+          <span class="tile__tag">UI / UX</span>
+          <h3 class="tile__title">Aura Wellness</h3>
+        </div>
+        <div class="tile__overlay">
+          <p class="tile__desc">Mobile app interface for a mindfulness platform — serene, accessible, beautifully considered.</p>
+          <a href="#" class="tile__link">View Project →</a>
+        </div>
+      </div>
+
+      <div class="tile tile--tall" style="--tile-color: #d8c8b8;">
+        <div class="tile__content">
+          <span class="tile__tag">Packaging</span>
+          <h3 class="tile__title">Terra Botanics</h3>
+        </div>
+        <div class="tile__overlay">
+          <p class="tile__desc">Sustainable packaging system for a herbal skincare brand — earthy, minimal, tactile.</p>
+          <a href="#" class="tile__link">View Project →</a>
+        </div>
+      </div>
+
+      <div class="tile tile--medium" style="--tile-color: #b8ccd8;">
+        <div class="tile__content">
+          <span class="tile__tag">Typography</span>
+          <h3 class="tile__title">Lumen Typeface</h3>
+        </div>
+        <div class="tile__overlay">
+          <p class="tile__desc">A custom serif typeface study — exploring contrast, weight, and optical corrections.</p>
+          <a href="#" class="tile__link">View Project →</a>
+        </div>
+      </div>
+
+      <div class="tile tile--medium" style="--tile-color: #e8d8b8;">
+        <div class="tile__content">
+          <span class="tile__tag">Web Design</span>
+          <h3 class="tile__title">Studio Nomad</h3>
+        </div>
+        <div class="tile__overlay">
+          <p class="tile__desc">Website design for a creative studio collective — modular layout with rich motion.</p>
+          <a href="#" class="tile__link">View Project →</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── SECTION 3: CONTACT FORM ─── -->
+  <section class="contact" id="contact">
+    <!-- Decorative dots -->
+    <div class="deco deco--tl"></div>
+    <div class="deco deco--tr"></div>
+    <div class="deco deco--bl"></div>
+    <div class="deco deco--circle"></div>
+
+    <div class="contact__inner">
+      <div class="contact__left">
+        <p class="contact__label">Get In Touch</p>
+        <h2 class="contact__title">Let's create<br/><em>something beautiful</em></h2>
+        <p class="contact__body">
+          Whether you have a project in mind, a question, or just want to say hello — my inbox is always open.
+        </p>
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <span class="contact__info-label">Email</span>
+            <span>hello@studioelara.co</span>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-label">Based in</span>
+            <span>London, UK</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact__right">
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__group">
+            <label class="form__label" for="name">Your Name</label>
+            <input class="form__input" type="text" id="name" name="name" placeholder="Elara Chen" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="email">Email Address</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="hello@example.com" required />
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="message">Your Message</label>
+            <textarea class="form__input form__textarea" id="message" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+          </div>
+          <button class="form__submit" type="submit" id="submitBtn">
+            <span class="btn-text">Send Message</span>
+            <span class="btn-icon">→</span>
+          </button>
+          <div class="form__success" id="formSuccess">
+            ✦ Message sent! I'll be in touch soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SECTION 4: CV DOWNLOAD ─── -->
+  <section class="cv" id="cv">
+    <div class="cv__divider"></div>
+
+    <div class="cv__inner">
+      <div class="cv__badge" id="cvBadge">
+        <span class="cv__badge-dot"></span>
+        Open to Work
+      </div>
+
+      <blockquote class="cv__quote">
+        "Good design is as little design as possible."
+        <cite>— Dieter Rams</cite>
+      </blockquote>
+
+      <h2 class="cv__title">Let's work<br/><em>together</em></h2>
+
+      <p class="cv__body">
+        I'm currently available for freelance projects, full-time roles, and creative collaborations. Download my CV to learn more about my background and experience.
+      </p>
+
+      <a href="#" class="cv__btn" id="cvBtn" download>
+        <svg class="cv__btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+          <polyline points="7 10 12 15 17 10"/>
+          <line x1="12" y1="15" x2="12" y2="3"/>
+        </svg>
+        Download CV
+      </a>
+
+      <div class="cv__stats">
+        <div class="cv__stat">
+          <span class="cv__stat-num">5+</span>
+          <span class="cv__stat-label">Years Experience</span>
+        </div>
+        <div class="cv__divider-v"></div>
+        <div class="cv__stat">
+          <span class="cv__stat-num">40+</span>
+          <span class="cv__stat-label">Projects Delivered</span>
+        </div>
+        <div class="cv__divider-v"></div>
+        <div class="cv__stat">
+          <span class="cv__stat-num">18</span>
+          <span class="cv__stat-label">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <p class="footer__copy">© 2025 Studio Elara. Designed with ♥ and intention.</p>
+    <div class="footer__links">
+      <a href="#" class="footer__link">Instagram</a>
+      <a href="#" class="footer__link">Behance</a>
+      <a href="#" class="footer__link">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
